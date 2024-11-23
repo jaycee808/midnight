@@ -1,0 +1,14 @@
+<div class="collection-page">
+    <h1>{{ collection.title }}</h1>
+    <p>{{ collection.description }}</p>
+    <div class="product-grid">
+        {% for product in collection.products %}
+        <div class="product-card">
+            <a href="{{ product.url }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price | money }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

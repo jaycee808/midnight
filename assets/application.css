@@ -1,0 +1,9 @@
+body {
+    background-color: {{ settings.background_color }};
+    color: {{ settings.text_color }};
+    font-family: {{ settings.body_font.family }};
+}
+
+h1, h2, h3 {
+    font-family: {{ settings.heading_font.family }};
+}

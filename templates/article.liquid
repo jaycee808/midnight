@@ -1,0 +1,7 @@
+<div class="article-page">
+    <h1>{{ article.title }}</h1>
+    <p><small>Posted on {{ article.published_at | date: '%B %d, %Y' }}</small></p>
+    <div class="article-content">
+        {{ article.content }}
+    </div>
+</div>

@@ -1,0 +1,19 @@
+{
+    "sections": {
+        "hero": {
+            "type": "hero",
+            "settings": {}
+        },
+        "featured-products": {
+            "type": "featured-products",
+            "settings": {
+                "title": "Our Featured Products",
+                "collection": "featured-products"
+            }
+        }
+    },
+    "order": [
+        "hero",
+        "featured-products"
+    ]
+}

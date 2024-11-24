@@ -1,0 +1,40 @@
+<section class="featured-products">
+    <div class="container">
+        <h2 class="featured-products__title">{{ section.settings.title }}</h2>
+        <div class="featured-products__grid">
+            {% for product in collections[section.settings.collection].products %}
+            <div class="featured-product">
+                <a href="{{ product.url }}">
+                    <img 
+                    src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}"
+                    width="100px"
+                    height="auto"
+                    >
+                </a>
+                <h3>{{ product.title }}</h3>
+                <p>{{ product.price | money }}</p>
+                <a href="{{ product.url }}" class="btn">View Product</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Featured Products",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Section Title",
+                "default": "Featured Products"
+            },
+            {
+                "type": "collection",
+                "id": "collection",
+                "label": "Select Collection"
+            }
+        ]
+    }
+    {% endschema %}

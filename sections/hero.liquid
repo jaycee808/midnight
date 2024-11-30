@@ -1,8 +1,13 @@
 <div class="hero">
-    <div class="container">
-        <h1>{{ section.settings.heading }}</h1>
-        <p>{{ section.settings.subheading }}</p>
-        <a href="{{ section.settings.button_link }}" class="btn">{{ section.settings.button_text }}</a>
+    <div class="hero-image hero-image-large">
+    </div>
+    <div class="hero-image hero-image-small">
+        <div class="hero-text">
+            <div>{{ section.settings.heading }}</div>
+            <a href="/collections/all" class="hero-button">
+                    Explore our collection <span class="arrow">→</span>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -15,12 +20,6 @@
         "id": "heading",
         "label": "Heading",
         "default": "Meet me at Midnight."
-        },
-        {
-        "type": "textarea",
-        "id": "subheading",
-        "label": "Subheading",
-        "default": "Discover the range."
         },
         {
         "type": "url",

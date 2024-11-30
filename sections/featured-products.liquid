@@ -1,6 +1,6 @@
 <section class="featured-products">
     <div class="container">
-        <h2 class="featured-products__title">{{ section.settings.title }}</h2>
+        <div class="featured-products__title">{{ section.settings.title }}</div>
         <div class="featured-products__grid">
             {% for product in collections[section.settings.collection].products %}
             <div class="featured-product">
@@ -11,7 +11,7 @@
                     height="auto"
                     >
                 </a>
-                <h3>{{ product.title }}</h3>
+                <div class="product-title">{{ product.title }}</div>
                 <p>{{ product.price | money }}</p>
                 <a href="{{ product.url }}" class="btn">View Product</a>
             </div>

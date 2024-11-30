@@ -7,7 +7,7 @@
         "featured-products": {
             "type": "featured-products",
             "settings": {
-                "title": "Our Featured Products",
+                "title": "Featured Products",
                 "collection": "featured-products"
             }
         }

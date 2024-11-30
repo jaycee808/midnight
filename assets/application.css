@@ -142,11 +142,11 @@ h1, h2, h3 {
 }
 
 .hero-image-large {
-    background-image: url('./images/man/tattoo-1.png');
+    background-image: url('./tattoo-1.png');
 }
 
 .hero-image-small {
-    background-image: url('./images/man/shadow-1.png');
+    background-image: url('./shadow-1.png');
 }
 
 .hero-text {

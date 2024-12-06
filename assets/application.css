@@ -3,13 +3,12 @@
 /* Color Palette */
 
 :root {
-    --silver: #C5C9CD;
+    --white: #F0FFFF;
     --black: #000000;
-    --mid-gray: #999BA1;
-    --light-blue: #90ADC1;
-    --deep-teal: #4D7493;
-    --dark-blue: #2E3E58;
-    --royal-blue: #263A99;
+    --dark-gray: #172531;
+    --light-gray: #D4D4D4;
+    --blue: #ADD8E6;
+    --indigo: #2B58DE;
 }
 
 /* Global Styles */
@@ -22,8 +21,7 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: var(--black);
-    color: var(--silver);
+    background: var(--black);
     line-height: 1.6;
 }
 
@@ -38,12 +36,6 @@ a {
     margin: 0 auto;
 }
 
-h1, h2, h3 {
-    font-weight: 700;
-    margin: 0;
-    color: var(--silver);
-}
-
 /* Header */
 
 .navbar {
@@ -51,7 +43,7 @@ h1, h2, h3 {
     flex-direction: column;
     padding: 1rem 4rem;
     background-color: var(--black);
-    color: var(--silver);
+    color: var(--);
 }
 
 /* Top Row */
@@ -65,7 +57,6 @@ h1, h2, h3 {
 
 .navbar-top-item {
     display: flex;
-    align-items: center;
 }
 
 .navbar-top-item.logo {
@@ -73,38 +64,36 @@ h1, h2, h3 {
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 300;
-    color: var(--silver);
+    color: var(--white);
 }
 
 .navbar-top-item.cart a {
     font-family: 'DM Mono', monospace;
     font-size: 1rem;
     text-transform: uppercase;
-    color: var(--highlight);
+    color: var(--white);
     transition: color 0.3s ease;
 }
 
 .navbar-top-item.cart a:hover {
-    color: var(--royal-blue);
+    color: var(--indigo);
 }
 
 /* Bottom Row */
 
 .navbar-bottom {
-    border-top: 1px solid var(--mid-gray);
-    border-bottom: 1px solid var(--mid-gray);
+    border-top: 1px solid var(--blue);
     padding: 1rem 0;
 }
 
 .menu {
     display: flex;
-    justify-content: center;
 }
 
 .menu-items {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     padding: 0;
     margin: 0;
 }
@@ -113,48 +102,48 @@ h1, h2, h3 {
     font-family: 'DM Mono', monospace;
     font-size: 1rem;
     text-transform: uppercase;
-    color: var(--silver);
+    color: var(--white);
     transition: color 0.3s ease;
 }
 
 .menu-items li a:hover {
-    color: var(--royal-blue);
+    color: var(--indigo);
 }
 
 /* Hero Section */
 
 .hero {
+    height: 60vh;
     padding: 1rem 4rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-    height: 70vh;
 }
 
 .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    background-image: url('./banner-image.png');
     background-size: cover;
     background-position: center;
-    
+    padding: 4rem;
 }
 
-.hero-image-large {
-    background-image: url('./tattoo-1.png');
+.hero-tagline {
+    display: flex;
 }
 
-.hero-image-small {
-    background-image: url('./shadow-1.png');
-}
-
-.hero-text {
-    position: absolute;
-    color: var(--silver);
-    font-family: 'Lavishly Yours', serif;
+.hero-tagline-top {
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
     font-size: 4rem;
+    letter-spacing: -2px;
+    position: relative;
+    color: var(--white)
+}
+
+.hero-tagline-bottom {
+    color: var(--light-gray);
+    font-family: 'Lavishly Yours', serif;
+    font-size: 7rem;
     text-transform: lowercase;
+    position: absolute;
+    left: 375px;
 }
 
 .hero-button {
@@ -162,9 +151,9 @@ h1, h2, h3 {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 10px 20px;
-    background-color: var(--light-blue);
-    color: var(--black);
-    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
     border-radius: 3px;
     text-align: center;
     transition: background-color 0.3s ease;
@@ -172,7 +161,7 @@ h1, h2, h3 {
 }
 
 .hero-button:hover {
-    background-color: var(--deep-teal);
+    background-color: var(--indigo);
 }
 
 .hero-button .arrow {
@@ -190,7 +179,7 @@ h1, h2, h3 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
-    color: var(--silver);
+    color: var(--light-gray);
     font-family:'DM Mono', monospace;
     text-transform: uppercase; 
 }
@@ -204,7 +193,7 @@ h1, h2, h3 {
 .featured-product {
     text-align: center;
     padding: 20px;
-    border: 1px solid var(--mid-gray);
+    border: 1px solid var(--light-gray);
     border-radius: 5px;
     background-color: var(--black);
 }
@@ -219,14 +208,14 @@ h1, h2, h3 {
 .product-title {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: var(--silver);
+    color: var(--light-gray);
     font-family: 'Lavishly Yours', serif;
     text-transform: lowercase;
 }
 
 .featured-product p {
     font-size: 1rem;
-    color: var(--light-blue);
+    color: var(--blue);
     margin-bottom: 15px;
 }
 
@@ -235,15 +224,15 @@ h1, h2, h3 {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 8px 15px;
-    background-color: var(--highlight);
-    color: var(--black);
-    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
     border-radius: 3px;
     transition: background-color 0.3s ease;
 }
 
 .featured-product .btn:hover {
-    background-color: var(--highlight-dark);
+    background-color: var(--indigo);
 }
 
 /* Collection Page Styles */
@@ -251,20 +240,20 @@ h1, h2, h3 {
 .collection-page {
     padding: 60px 0;
     background-color: var(--black);
-    color: var(--silver);
+    color: var(--white);
     text-align: center;
 }
 
 .collection-page h1 {
     font-size: 3rem;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'DM Mono', monospace;
     color: var(--light-blue);
     margin-bottom: 20px;
 }
 
 .collection-page p {
     font-size: 1.2rem;
-    color: var(--mid-gray);
+    color: var(--indigo);
     margin-bottom: 40px;
 }
 
@@ -276,15 +265,14 @@ h1, h2, h3 {
 
 .product-card {
     padding: 20px;
-    border: 1px solid var(--mid-gray);
-    border-radius: 5px;
-    background-color: var(--dark-blue);
+    border: 1px solid var(--light-gray);
+    background-color: var(--black);
     text-align: center;
 }
 
 .product-card h2 {
     font-size: 1.5rem;
-    color: var(--silver);
+    color: var(--white);
     margin-bottom: 10px;
 }
 
@@ -297,7 +285,7 @@ h1, h2, h3 {
 
 .footer-content {
     background-color: var(--black);
-    color: var(--silver);
+    color: var(--white);
     text-align: center;
     padding: 40px 20px;
     border-top: 1px solid var(--mid-gray);
@@ -326,11 +314,11 @@ h1, h2, h3 {
 .footer-content .social-links li a {
     font-family: 'DM Mono', monospace;
     font-size: 1rem;
-    color: var(--light-blue);
+    color: var(--blue);
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
 .footer-content .social-links li a:hover {
-    color: var(--royal-blue);
+    color: var(--indigo);
 }

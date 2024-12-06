@@ -1,14 +1,15 @@
-<div class="hero">
-    <div class="hero-image hero-image-large"></div> 
-    <div class="hero-image hero-image-small">
-        <div class="hero-text">
-            <div>{{ section.settings.heading }}</div>
+<div class="hero hero-image">
+    <div class="hero-text">
+        <div class="hero-tagline">
+            <div class="hero-tagline-top">{{ section.settings.heading-top }}</div>
+            <div class="hero-tagline-bottom">{{ section.settings.heading-bottom }}</div>
+        </div>
             <a href="/collections/all" class="hero-button">
                     Explore our collection <span class="arrow">→</span>
             </a>
-        </div>
     </div>
 </div>
+
 
 {% schema %}
 {
@@ -16,9 +17,15 @@
     "settings": [
         {
         "type": "text",
-        "id": "heading",
+        "id": "heading-top",
         "label": "Heading",
-        "default": "Meet me at Midnight."
+        "default": "Meet me at"
+        },
+        {
+        "type": "text",
+        "id": "heading-bottom",
+        "label": "Heading-bottom",
+        "default": "Midnight."
         },
         {
         "type": "url",

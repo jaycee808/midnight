@@ -281,6 +281,108 @@ a {
     color: var(--light-blue);
 }
 
+/* Product Page Styles */
+
+.product-page {
+    margin: 1rem 4rem;
+}
+
+.product-title {
+    font-size: 4rem;
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+}
+
+.product-display {
+    display: flex;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-details {
+    margin: 0 2rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: var(--blue);
+    font-family: 'DM Mono', sans-serif;
+}
+
+.product-description p {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-family: 'DM Mono', monospace;
+}
+
+/* Add to Cart Button */
+
+.add-to-cart-button {
+    font-family: 'DM Mono', monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: var(--indigo);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    background-color: var(--blue);
+}
+
+/* Ingredient Section Styles */
+
+.product-ingredients {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ingredient-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.ingredient-group {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ingredient-section-title {
+    font-size: 4rem;
+    font-family: 'Lavishly Yours', monospace;
+    color: var(--indigo);
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notes-list li {
+    font-size: 1rem;
+    font-family: 'DM Mono', sans-serif;
+    color: var(--light-gray);
+    margin-bottom: 0.5rem;
+}
+
 /* Footer Styles */
 
 .footer-content {

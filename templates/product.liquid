@@ -1,21 +1,20 @@
 <div class="product-page">
-    <div class="product-images">
-        {% for image in product.images %}
-        {% endfor %}
-    </div>
-    <div class="product-details">
-        <h1>{{ product.title }}</h1>
-        <img 
-        src="{{ product.featured_image | image_url }}" 
-        alt="{{ product.title }}"
-        width="300px"
-        height="auto"
-        >
+    <div class="product-title">{{ product.title }}</div>
+    <div class="product-display">
+        <div class="product-image">
+            <img 
+            src="{{ product.featured_image | image_url }}" 
+            alt="{{ product.title }}"
+            width="100%"
+            height="auto">
+        </div>
+        <div class="product-details">
         <p>{{ product.description }}</p>
-        <p>{{ product.price | money }}</p>
-        <form method="post" action="/cart/add">
+        <p class="product-price">{{ product.price | money }}</p>
+        <form method="post" action="/cart/add" class="add-to-cart-form">
             <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="add-to-cart-button">Add to Cart</button>
         </form>
+        </div>
     </div>
 </div>

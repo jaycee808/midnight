@@ -1,12 +1,12 @@
 <div class="collection-page">
-    <h1 class="collection-title">{{ collection.title }}</h1>
+    <div class="collection-title">{{ collection.title }}</div>
     <p class="collection-description">{{ collection.description }}</p>
     <div class="product-list">
         {% for product in collection.products %}
         <div class="product-card">
             <a href="{{ product.url }}" class="product-link">
                 <div class="product-info">
-                    <h2 class="product-title">{{ product.title }}</h2>
+                    <div class="product-title-collection-page">{{ product.title }}</div>
                     <p class="product-price">{{ product.price | money }}</p>
                 </div>
             </a>

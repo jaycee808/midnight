@@ -61,14 +61,14 @@ a {
 .navbar-top-item.logo {
     font-family: 'DM Mono', sans-serif;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 300;
     color: var(--white);
 }
 
 .navbar-top-item.cart a {
     font-family: 'DM Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     color: var(--white);
     transition: color 0.3s ease;
@@ -99,7 +99,7 @@ a {
 
 .menu-items li a {
     font-family: 'DM Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     color: var(--white);
     transition: color 0.3s ease;
@@ -132,7 +132,6 @@ a {
     text-transform: uppercase;
     font-size: 4rem;
     letter-spacing: -2px;
-    position: relative;
     color: var(--white)
 }
 
@@ -141,13 +140,13 @@ a {
     font-family: 'Lavishly Yours', serif;
     font-size: 7rem;
     text-transform: lowercase;
-    position: absolute;
-    left: 375px;
+    position: relative;
+    left: -40px;
 }
 
 .hero-button {
     font-family: 'DM Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
     background-color: var(--indigo);
@@ -175,12 +174,20 @@ a {
 }
 
 .featured-products__title {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--light-gray);
+    color: var(--white);
     font-family:'DM Mono', monospace;
     text-transform: uppercase; 
+}
+
+.featured-product-price {
+    font-family:'DM Mono', monospace;
+    font-size: 1.25rem;
+    color: var(--blue);
+    margin-bottom: 1.5rem;
 }
 
 .featured-products__grid {
@@ -197,6 +204,15 @@ a {
     background-color: var(--black);
 }
 
+.featured-product-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--light-gray);
+    text-transform: uppercase;
+}
+
 .featured-product img {
     width: 70%;
     height: auto;
@@ -204,23 +220,9 @@ a {
     border-radius: 3px;
 }
 
-.product-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--light-gray);
-    font-family: 'Lavishly Yours', serif;
-    text-transform: lowercase;
-}
-
-.featured-product p {
-    font-size: 1rem;
-    color: var(--blue);
-    margin-bottom: 1.5rem;
-}
-
-.featured-product .btn {
+.featured-products-btn {
     font-family: 'DM Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
     background-color: var(--indigo);
@@ -245,6 +247,7 @@ a {
 .collection-title {
     font-size: 4rem;
     font-family: 'DM Mono', monospace;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1rem;
@@ -267,15 +270,17 @@ a {
     color: inherit;
 }
 
-.product-title {
-    font-size: 1.5rem;
+.product-title-collection-page {
+    font-size: 4rem;
+    font-weight: 600;
     font-family: 'DM Mono', monospace;
+    margin-bottom: 0.75rem;
+    color: var(--light-gray);
     text-transform: uppercase;
-    margin: 0;
 }
 
 .product-price {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-family: 'DM Mono', sans-serif;
     color: var(--blue);
     margin-top: 0.5rem;
@@ -285,12 +290,6 @@ a {
 
 .product-page {
     margin: 1rem 4rem;
-}
-
-.product-title {
-    font-size: 4rem;
-    font-family: 'DM Mono', monospace;
-    text-transform: uppercase;
 }
 
 .product-display {
@@ -309,14 +308,14 @@ a {
 }
 
 .product-price {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--blue);
     font-family: 'DM Mono', sans-serif;
     margin-top: 2rem;
 }
 
 .product-description p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--white);
     font-family: 'DM Mono', monospace;
 }
@@ -325,7 +324,7 @@ a {
 
 .add-to-cart-button {
     font-family: 'DM Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
     background-color: var(--indigo);
@@ -362,7 +361,6 @@ a {
 .ingredient-group {
     display: flex;
     flex-direction: column;
-    
 }
 
 .ingredient-section-title {
@@ -394,7 +392,7 @@ a {
 }
 
 .cart-title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'DM Mono', monospace;
     text-transform: uppercase;
     text-align: center;
@@ -414,8 +412,8 @@ a {
 }
 
 .cart-table-heading {
-    font-size: 1.2rem;
-    font-family: 'DM Mono', monospace;
+    font-size: 1.25rem;
+    font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
     padding: 1rem;
     border-bottom: 1px solid var(--light-gray);
@@ -438,7 +436,7 @@ a {
 }
 
 .cart-item-title {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: 'DM Mono', monospace;
     color: var(--white);
 }
@@ -446,7 +444,7 @@ a {
 .cart-item-quantity,
 .cart-item-price,
 .cart-item-total {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: 'DM Mono', monospace;
     color: var(--light-gray);
     padding: 1rem;
@@ -458,14 +456,14 @@ a {
 }
 
 .cart-total {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: 'DM Mono', monospace;
     margin-bottom: 1rem;
 }
 
 .checkout-button {
     font-family: 'DM Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
     background-color: var(--indigo);
@@ -509,24 +507,24 @@ a {
 }
 
 .about-sub-heading-top {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'DM Mono', monospace;
     text-transform: uppercase;
     color: var(--white);
 }
 
 .about-sub-heading-bottom {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Lavishly Yours', serif;
     text-transform: lowercase;
     color: var(--blue);
     position: relative;
-    left: 8rem;
-    bottom: 2rem;
+    left: 10rem;
+    bottom: 3rem;
 }
 
 .about-page-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--white);
     font-family: 'DM Mono', monospace;
     padding: 1rem 0;
@@ -535,32 +533,37 @@ a {
 .about-page-text-heading {
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    font-weight: 600;
     color: var(--light-gray);
 }
 
 .about-page-scent-list {
     font-family: 'DM Mono', monospace;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    padding: 1rem 0;
     color: var(--white);
 }
 
 .about-page-bottom-tagline {
     font-family: 'DM Mono', monospace;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--blue);
     padding: 1rem 0;
 }
 
 .text-accent-font {
     font-family: 'Lavishly Yours', serif;
-    font-size: 2.4rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
 }
 
 /* Contact Page Styles */
 
 .contact-page-heading {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     font-family: 'DM Mono', monospace;
     color: var(--white);
     padding: 1rem 0;
@@ -569,13 +572,13 @@ a {
 .contact-page-info-heading {
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 2.4rem;
-    color: var(--light-gray);
+    font-size: 2.5rem;
+    color: var(--blue);
 }
 
 .contact-page-info-details {
     font-family: 'DM Mono', monospace;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--white);
     padding-bottom: 2rem;
 }

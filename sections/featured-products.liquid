@@ -11,9 +11,9 @@
                     height="auto"
                     >
                 </a>
-                <div class="product-title">{{ product.title }}</div>
-                <p>{{ product.price | money }}</p>
-                <a href="{{ product.url }}" class="btn">View Product</a>
+                <div class="featured-product-title">{{ product.title }}</div>
+                <p class="featured-product-price">{{ product.price | money }}</p>
+                <a href="{{ product.url }}" class="featured-products-btn">View Product</a>
             </div>
             {% endfor %}
         </div>

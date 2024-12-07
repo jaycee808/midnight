@@ -1,29 +1,35 @@
 <div class="cart-page">
-    <h1>Your Cart</h1>
+    <h1 class="cart-title">Your Cart</h1>
     {% if cart.item_count > 0 %}
-    <table>
+    <table class="cart-table">
         <thead>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
+            <tr class="cart-table-header">
+                <th class="cart-table-heading">Product</th>
+                <th class="cart-table-heading">Quantity</th>
+                <th class="cart-table-heading">Price</th>
+                <th class="cart-table-heading">Total</th>
             </tr>
         </thead>
         <tbody>
             {% for item in cart.items %}
-            <tr>
-                <td>{{ item.product.title }}</td>
-                <td>{{ item.quantity }}</td>
-                <td>{{ item.price | money }}</td>
-                <td>{{ item.line_price | money }}</td>
+            <tr class="cart-item">
+                <td class="cart-item-product">
+                    <div class="cart-item-details">
+                        <span class="cart-item-title">{{ item.product.title }}</span>
+                    </div>
+                </td>
+                <td class="cart-item-quantity">{{ item.quantity }}</td>
+                <td class="cart-item-price">{{ item.price | money }}</td>
+                <td class="cart-item-total">{{ item.line_price | money }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <p>Total: {{ cart.total_price | money }}</p>
-    <a href="/checkout" class="btn">Proceed to Checkout</a>
+    <div class="cart-summary">
+        <p class="cart-total">Total: {{ cart.total_price | money }}</p>
+        <a href="/checkout" class="btn checkout-button">Proceed to Checkout</a>
+    </div>
     {% else %}
-    <p>Your cart is empty.</p>
+    <p class="cart-empty">Your cart is empty.</p>
     {% endif %}
 </div>

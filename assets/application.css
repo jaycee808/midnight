@@ -286,6 +286,15 @@ a {
     margin: 1rem 4rem;
 }
 
+.product-page-title {
+    font-size: 4rem;
+    font-family: 'DM Mono', monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--light-gray);
+}
+
 .product-display {
     display: flex;
 }
@@ -791,5 +800,80 @@ a {
 
     .footer-content .social-links li a {
         font-size: 0.75rem;
+    }
+
+    /* Product Page Styles */
+
+    .product-page {
+        margin: 1rem;
+    }
+
+    .product-display {
+        display: grid;
+    }
+
+    .product-page-title {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .product-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .product-details {
+        margin: 0;
+    }
+
+    .product-price {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .product-description p {
+        font-size: 1rem;
+    }
+
+    /* Add to Cart Button */
+
+    .add-to-cart-button {
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin-top: 2rem;
+    }
+
+    /* Ingredient Section Styles */
+
+    .product-ingredients {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .ingredient-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ingredient-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ingredient-section-title {
+        font-size: 3rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .notes-list li {
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
     }
 }

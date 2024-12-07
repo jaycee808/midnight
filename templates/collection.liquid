@@ -1,12 +1,14 @@
 <div class="collection-page">
-    <h1>{{ collection.title }}</h1>
-    <p>{{ collection.description }}</p>
-    <div class="product-grid">
+    <div class="collection-title">{{ collection.title }}</div>
+    <p class="collection-description">{{ collection.description }}</p>
+    <div class="product-list">
         {% for product in collection.products %}
         <div class="product-card">
-            <a href="{{ product.url }}">
-                <h2>{{ product.title }}</h2>
-                <p>{{ product.price | money }}</p>
+            <a href="{{ product.url }}" class="product-link">
+                <div class="product-info">
+                    <h2 class="product-title">{{ product.title }}</h2>
+                    <p class="product-price">{{ product.price | money }}</p>
+                </div>
             </a>
         </div>
         {% endfor %}

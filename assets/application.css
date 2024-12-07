@@ -30,12 +30,6 @@ a {
     color: inherit;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /* Header */
 
 .navbar {
@@ -623,4 +617,48 @@ a {
 
 .footer-content .social-links li a:hover {
     color: var(--indigo);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Header */
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Top Row */
+
+    .navbar-top {
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar-top-item.logo {
+        font-size: 3rem;
+    }
+
+    .navbar-top-item.cart a {
+        font-size: 0.75rem;
+    }
+
+    /* Bottom Row */
+
+    .navbar-bottom {
+        border-top: 1px solid var(--blue);
+        padding: 0.75rem 0;
+    }
+
+    .menu-items {
+        gap: 1rem;
+    }
+
+    .menu-items li a {
+        font-size: 1rem;
+    }
 }

@@ -960,4 +960,51 @@ a {
         text-align: center;
         color: var(--light-gray);
     }
+
+    /* Page Template Styles */
+
+    .page-template {
+        margin: 1rem;
+        overflow: hidden;
+    }
+
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-sub-heading {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .about-sub-heading-top {
+        font-size: 1.5rem;
+    }
+
+    .about-sub-heading-bottom {
+        font-size: 2rem;
+        left: 3rem;
+        bottom: 1rem;
+    }
+
+    .about-page-text {
+        font-size: 1rem;
+    }
+
+    .about-page-text-heading {
+        font-size: 2rem;
+    }
+
+    .about-page-scent-list {
+        font-size: 1rem;
+    }
+
+    .about-page-bottom-tagline {
+        font-size: 1rem;
+    }
+
+    .text-accent-font {
+        font-size: 2rem;
+    }
 }

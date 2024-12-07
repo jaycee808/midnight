@@ -6,7 +6,7 @@
     --white: #F0FFFF;
     --black: #000000;
     --dark-gray: #172531;
-    --light-gray: #D4D4D4;
+    --light-gray: #949494;
     --blue: #89CFF0;
     --indigo: #002D70;
 }
@@ -243,7 +243,7 @@ a {
 }
 
 .collection-title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'DM Mono', monospace;
     text-transform: uppercase;
     text-align: center;
@@ -485,6 +485,75 @@ a {
     font-size: 1.5rem;
     text-align: center;
     color: var(--light-gray);
+}
+
+/* Page Template Styles */
+
+.page-template {
+    margin: 1rem 4rem;
+    overflow: hidden;
+}
+
+.page-title {
+    font-size: 4rem;
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.about-sub-heading {
+    text-align: center;
+}
+
+.about-sub-heading-top {
+    font-size: 2rem;
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.about-sub-heading-bottom {
+    font-size: 3rem;
+    font-family: 'Lavishly Yours', serif;
+    text-transform: lowercase;
+    color: var(--blue);
+    position: relative;
+    left: 8rem;
+    bottom: 2rem;
+}
+
+.about-page-text {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-family: 'DM Mono', monospace;
+    padding: 1rem 0;
+}
+
+.about-page-text-heading {
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: var(--light-gray);
+}
+
+.about-page-scent-list {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.about-page-bottom-tagline {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--blue);
+    padding: 1rem 0;
+}
+
+.text-accent-font {
+    font-family: 'Lavishly Yours', serif;
+    font-size: 2.4rem;
 }
 
 /* Footer Styles */

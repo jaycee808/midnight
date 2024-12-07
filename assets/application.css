@@ -70,13 +70,13 @@ a {
 }
 
 .navbar-top-item.cart a:hover {
-    color: var(--indigo);
+    color: var(--blue);
 }
 
 /* Bottom Row */
 
 .navbar-bottom {
-    border-top: 1px solid var(--blue);
+    border-top: 1px solid var(--indigo);
     padding: 1rem 0;
 }
 
@@ -101,7 +101,7 @@ a {
 }
 
 .menu-items li a:hover {
-    color: var(--indigo);
+    color: var(--blue);
 }
 
 /* Hero Section */
@@ -677,6 +677,7 @@ a {
     .hero {
         height: 40vh;
         padding: 0.5rem 1rem;
+        overflow: hidden;
     }
 
     .hero-image {

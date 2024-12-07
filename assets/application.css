@@ -9,6 +9,7 @@
     --light-gray: #949494;
     --blue: #89CFF0;
     --indigo: #002D70;
+    --indigoBtn: #002d7088;
 }
 
 /* Global Styles */
@@ -143,7 +144,7 @@ a {
     font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
-    background-color: var(--indigo);
+    background-color: var(--indigoBtn);
     color: var(--white);
     border: 1px solid var(--white);
     border-radius: 3px;
@@ -1006,5 +1007,19 @@ a {
 
     .text-accent-font {
         font-size: 2rem;
+    }
+
+    /* Contact Page Styles */
+
+    .contact-page-heading {
+        font-size: 1rem;
+    }
+
+    .contact-page-info-heading {
+        font-size: 2rem;
+    }
+
+    .contact-page-info-details {
+        font-size: 1rem;
     }
 }

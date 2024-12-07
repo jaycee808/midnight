@@ -505,6 +505,7 @@ a {
 
 .about-sub-heading {
     text-align: center;
+    padding: 1rem 0;
 }
 
 .about-sub-heading-top {
@@ -554,6 +555,29 @@ a {
 .text-accent-font {
     font-family: 'Lavishly Yours', serif;
     font-size: 2.4rem;
+}
+
+/* Contact Page Styles */
+
+.contact-page-heading {
+    font-size: 1.6rem;
+    font-family: 'DM Mono', monospace;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.contact-page-info-heading {
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: var(--light-gray);
+}
+
+.contact-page-info-details {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding-bottom: 2rem;
 }
 
 /* Footer Styles */

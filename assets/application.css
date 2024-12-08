@@ -112,7 +112,7 @@ a {
 }
 
 .hero-image {
-    background-image: url('./banner-image.png');
+    background-image: url('./banner-image-2.png');
     background-size: cover;
     background-position: center;
     padding: 4rem;
@@ -131,7 +131,7 @@ a {
 }
 
 .hero-tagline-bottom {
-    color: var(--purple-transparent);
+    color: var(--purple);
     font-family: 'Lavishly Yours', serif;
     font-size: 7rem;
     text-transform: lowercase;

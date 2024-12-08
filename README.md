@@ -20,7 +20,7 @@ Midnight is an e-commerce platform dedicated to a men’s fragrance brand. The s
 
 ## Link to Deployed Site
 
-[[https://midnight-fragrance.myshopify.com/](https://midnight-fragrance.myshopify.com/)](https://midnight-fragrances-men.myshopify.com/)
+https://midnight-fragrances-men.myshopify.com/
 
 This password to access the site it is - midnight
 

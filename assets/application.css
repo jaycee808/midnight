@@ -3,13 +3,13 @@
 /* Color Palette */
 
 :root {
-    --white: #F0FFFF;
-    --black: #000000;
-    --dark-gray: #172531;
-    --light-gray: #949494;
-    --blue: #89CFF0;
-    --indigo: #002D70;
-    --indigoBtn: #002d7088;
+    --white: #F5F9F8;
+    --black: #0A0012;
+    --purple: #841FF6;
+    --purple-transparent: #831ff666;
+    --dark-purple: #1F0037;
+    --gray: #DCD5E1;
+    --dark-gray: #787878;
 }
 
 /* Global Styles */
@@ -70,13 +70,13 @@ a {
 }
 
 .navbar-top-item.cart a:hover {
-    color: var(--blue);
+    color: var(--purple);
 }
 
 /* Bottom Row */
 
 .navbar-bottom {
-    border-top: 1px solid var(--indigo);
+    border-top: 1px solid var(--gray);
     padding: 1rem 0;
 }
 
@@ -101,7 +101,7 @@ a {
 }
 
 .menu-items li a:hover {
-    color: var(--blue);
+    color: var(--purple);
 }
 
 /* Hero Section */
@@ -131,7 +131,7 @@ a {
 }
 
 .hero-tagline-bottom {
-    color: var(--blue);
+    color: var(--purple-transparent);
     font-family: 'Lavishly Yours', serif;
     font-size: 7rem;
     text-transform: lowercase;
@@ -144,7 +144,7 @@ a {
     font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
-    background-color: var(--indigoBtn);
+    background-color: var(--purple-transparent);
     color: var(--white);
     border: 1px solid var(--white);
     border-radius: 3px;
@@ -153,8 +153,7 @@ a {
 }
 
 .hero-button:hover {
-    background-color: var(--blue);
-    color: var(--black);
+    background-color: var(--purple);
 }
 
 .hero-button .arrow {
@@ -181,38 +180,36 @@ a {
 .featured-product-price {
     font-family:'DM Mono', monospace;
     font-size: 1.25rem;
-    color: var(--blue);
+    color: var(--purple);
     margin-bottom: 1.5rem;
 }
 
 .featured-products__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: space-between;
     gap: 1rem;
+    margin: 1rem 4rem;
 }
 
 .featured-product {
     text-align: center;
-    padding: 2rem;
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--gray);
     border-radius: 5px;
     background-color: var(--black);
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 .featured-product-title {
     font-family: 'DM Mono', monospace;
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: var(--light-gray);
+    color: var(--gray);
     text-transform: uppercase;
 }
 
 .featured-product img {
-    width: 70%;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .featured-products-btn {
@@ -220,7 +217,7 @@ a {
     font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
-    background-color: var(--indigo);
+    background-color: var(--dark-purple);
     color: var(--white);
     border: 1px solid var(--white);
     border-radius: 3px;
@@ -228,9 +225,8 @@ a {
     cursor: pointer;
 }
 
-.featured-product .btn:hover {
-    background-color: var(--blue);
-    color: var(--black);
+.featured-products-btn:hover {
+    background-color: var(--purple);
 }
 
 /* Collection Page Styles */
@@ -246,7 +242,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--gray);
 }
 
 /* Product List Styles */
@@ -254,7 +250,7 @@ a {
 .product-card {
     gap: 2rem;
     padding: 1rem 0;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--gray);
 }
 
 .product-link {
@@ -270,14 +266,14 @@ a {
     font-weight: 600;
     font-family: 'DM Mono', monospace;
     margin-bottom: 0.75rem;
-    color: var(--light-gray);
+    color: var(--gray);
     text-transform: uppercase;
 }
 
 .product-price {
     font-size: 1.25rem;
     font-family: 'DM Mono', sans-serif;
-    color: var(--blue);
+    color: var(--purple);
     margin-top: 0.5rem;
 }
 
@@ -293,7 +289,7 @@ a {
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: var(--light-gray);
+    color: var(--gray);
 }
 
 .product-display {
@@ -311,13 +307,6 @@ a {
     margin: 0 2rem;
 }
 
-.product-price {
-    font-size: 1.25rem;
-    color: var(--blue);
-    font-family: 'DM Mono', sans-serif;
-    margin-top: 2rem;
-}
-
 .product-description p {
     font-size: 1.25rem;
     color: var(--white);
@@ -331,7 +320,7 @@ a {
     font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
-    background-color: var(--indigo);
+    background-color: var(--dark-purple);
     color: var(--white);
     border: 1px solid var(--white);
     border-radius: 3px;
@@ -341,8 +330,7 @@ a {
 }
 
 .add-to-cart-button:hover {
-    background-color: var(--blue);
-    color: var(--black);
+    background-color: var(--purple);
 }
 
 /* Ingredient Section Styles */
@@ -370,7 +358,7 @@ a {
 .ingredient-section-title {
     font-size: 4rem;
     font-family: 'Lavishly Yours', monospace;
-    color: var(--blue);
+    color: var(--purple);
     margin-bottom: 1rem;
     text-transform: lowercase;
 }
@@ -384,7 +372,7 @@ a {
 .notes-list li {
     font-size: 1rem;
     font-family: 'DM Mono', sans-serif;
-    color: var(--light-gray);
+    color: var(--dark-gray);
     margin-bottom: 0.5rem;
 }
 
@@ -410,7 +398,7 @@ a {
 }
 
 .cart-table-header {
-    background-color: var(--dark-gray);
+    background-color: var(--dark-purple);
     color: var(--white);
     text-align: left;
 }
@@ -420,11 +408,11 @@ a {
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
     padding: 1rem;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--gray);
 }
 
 .cart-item {
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--gray);
 }
 
 .cart-item-product {
@@ -450,7 +438,7 @@ a {
 .cart-item-total {
     font-size: 1.25rem;
     font-family: 'DM Mono', monospace;
-    color: var(--light-gray);
+    color: var(--gray);
     padding: 1rem;
 }
 
@@ -470,7 +458,7 @@ a {
     font-size: 1.25rem;
     text-transform: uppercase;
     padding: 10px 20px;
-    background-color: var(--indigo);
+    background-color: var(--dark-purple);
     color: var(--white);
     border: 1px solid var(--white);
     border-radius: 3px;
@@ -479,14 +467,13 @@ a {
 }
 
 .checkout-button:hover {
-    background-color: var(--blue);
-    color: var(--black);
+    background-color: var(--purple);
 }
 
 .cart-empty {
     font-size: 1.5rem;
     text-align: center;
-    color: var(--light-gray);
+    color: var(--gray);
 }
 
 /* Page Template Styles */
@@ -521,7 +508,7 @@ a {
     font-size: 4rem;
     font-family: 'Lavishly Yours', serif;
     text-transform: lowercase;
-    color: var(--blue);
+    color: var(--purple);
     position: relative;
     left: 10rem;
     bottom: 3rem;
@@ -539,7 +526,7 @@ a {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 600;
-    color: var(--light-gray);
+    color: var(--dark-gray);
 }
 
 .about-page-scent-list {
@@ -552,7 +539,7 @@ a {
 .about-page-bottom-tagline {
     font-family: 'DM Mono', monospace;
     font-size: 1.25rem;
-    color: var(--blue);
+    color: var(--dark-gray);
     padding: 1rem 0;
 }
 
@@ -561,7 +548,7 @@ a {
     font-size: 4rem;
     display: flex;
     justify-content: flex-end;
-    color: var(--white);
+    color: var(--purple);
 }
 
 /* Contact Page Styles */
@@ -577,7 +564,7 @@ a {
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
     font-size: 2.5rem;
-    color: var(--blue);
+    color: var(--purple);
 }
 
 .contact-page-info-details {
@@ -593,15 +580,16 @@ a {
     background-color: var(--black);
     color: var(--white);
     text-align: center;
-    padding: 40px 20px;
-    border-top: 1px solid var(--mid-gray);
+    padding: 2rem 1rem;
+    margin: 1rem 4rem;
+    border-top: 1px solid var(--gray);
 }
 
 .footer-content p {
     font-family: 'DM Mono', monospace;
     font-size: 1rem;
     margin-bottom: 20px;
-    color: var(--mid-gray);
+    color: var(--gray);
 }
 
 .footer-content .social-links {
@@ -620,13 +608,13 @@ a {
 .footer-content .social-links li a {
     font-family: 'DM Mono', monospace;
     font-size: 1rem;
-    color: var(--blue);
+    color: var(--purple);
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
 .footer-content .social-links li a:hover {
-    color: var(--indigo);
+    color: var(--dark-gray);
 }
 
 /* Media Queries */

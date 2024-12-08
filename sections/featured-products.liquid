@@ -4,13 +4,13 @@
         <div class="featured-products__grid">
             {% for product in collections[section.settings.collection].products %}
             <div class="featured-product">
-                <a href="{{ product.url }}">
+                <div class="product-image">
                     <img 
-                    src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}"
-                    width="100px"
-                    height="auto"
-                    >
-                </a>
+                    src="{{ product.featured_image | image_url }}" 
+                    alt="{{ product.title }}"
+                    width="100%"
+                    height="auto">
+                </div>
                 <div class="featured-product-title">{{ product.title }}</div>
                 <p class="featured-product-price">{{ product.price | money }}</p>
                 <a href="{{ product.url }}" class="featured-products-btn">View Product</a>

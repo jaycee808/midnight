@@ -18,7 +18,7 @@ Midnight is an e-commerce platform dedicated to a men’s fragrance brand. The s
 
 https://midnight-fragrances-men.myshopify.com/
 
-This password to access the site it is - midnight
+This password to access the site is - midnight
 
 ## Technologies Used
 

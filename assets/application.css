@@ -4,7 +4,7 @@
 
 :root {
     --white: #F5F9F8;
-    --black: #0A0012;
+    --black: #17111D;
     --purple: #841FF6;
     --purple-transparent: #831ff666;
     --dark-purple: #1F0037;
@@ -112,7 +112,7 @@ a {
 }
 
 .hero-image {
-    background-image: url('./banner-image-2.png');
+    background-image: url('./hero-image.png');
     background-size: cover;
     background-position: center;
     padding: 4rem;
@@ -131,7 +131,7 @@ a {
 }
 
 .hero-tagline-bottom {
-    color: var(--purple);
+    color: var(--gray);
     font-family: 'Lavishly Yours', serif;
     font-size: 7rem;
     text-transform: lowercase;
@@ -539,7 +539,7 @@ a {
 .about-page-bottom-tagline {
     font-family: 'DM Mono', monospace;
     font-size: 1.25rem;
-    color: var(--dark-gray);
+    color: var(--gray);
     padding: 1rem 0;
 }
 
